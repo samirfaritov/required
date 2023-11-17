@@ -9,6 +9,13 @@ let patterns = {
 let inps = document.querySelectorAll('input')
 let form = document.forms.login
 
+let ALL = document.querySelector('.ALL')
+let NEED = document.querySelector('.NEED')
+let SUCCESS = document.querySelector('.SUCCESS')
+let ERROR = document.querySelector('.ERROR')
+
+
+ALL.innerHTML = inps.length
 
 inps.forEach(inp => {
     inp.onkeyup = () => {
@@ -35,7 +42,7 @@ form.onsubmit = (e) => {
         }
     })
     if (error) {
-        alert('Xatto')
+        // alert('Xatto')
     } else {
         submit()
     }

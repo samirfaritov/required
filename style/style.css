@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
   }
   form div {
     width: 100%;
@@ -23,7 +24,8 @@
     transition: 0.5s ease;
   }
   form div input {
-    width: 100%;
+    width: 70%;
+    height: 60px;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #c4c4c4;
@@ -39,17 +41,23 @@
     background-position: center;
     position: absolute;
     top: 38px;
-    right: -25px;
+    right: 100px;
     opacity: 0;
     transition: 0.5s ease;
   }
-
+  
   form button {
     padding: 10px;
     border: 1px solid blue;
     color: #fff;
     border-radius: 8px;
     background-color: blue;
+    width: 70%;
+    height: 60px;
+    position: absolute;
+    top: 480px;
+    left: 80px;
+    cursor: pointer;
   }
 
   .required input {
@@ -65,4 +73,79 @@
 
   .errorField::after {
     opacity: 1 !important;
+  }
+  
+  
+  form .rr {
+    display: flex;
+    position: relative;
+    right: 360px;
+    top: -65px;
+  }
+
+  form .rr .r1 {
+    position: relative;
+    left: 440px;
+    bottom: 320px;
+  }
+
+  form .rr .r2 {
+    position: relative;
+    left: 440px;
+    bottom: 320px;
+  }
+
+  form .rr .req {
+    position: relative;
+  }
+  form .rr .req .b {
+    position: absolute;
+    bottom: 555px;
+  }
+  form .rr .req .b1 {
+    position: absolute;
+    bottom: 555px;
+    left: 440px;
+  }
+  form .rr .req .b2 {
+    position: absolute;
+    bottom: 555px;
+    left: 880px;
+  }
+  
+  h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  form .h1 {
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+    /* display: flex; */
+  }
+  
+  form .p {
+    /* display: flex; */
+    position: relative;
+  }
+  
+  form .p .NEED {
+    /* display: flex; */
+    position: absolute;
+    left: 90px;
+  }
+  form .p .SUCCESS {
+    /* display: flex; */
+    position: absolute;
+    left: 170px;
+  }
+  form .p .ERROR {
+    /* display: flex; */
+    position: absolute;
+    left: 260px;
   }
